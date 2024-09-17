@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KantukScan - Start Checking</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static', filename = '/img/turu.png')}}" rel="icon">
+  <link href="{{url_for('static', filename = '/img/turu.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,
+    700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,
+    500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,
+    700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='css/main.css')}}" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: SawitScan
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/SawitScan-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <h1>KantukScan<span>.</span></h1>
+      </a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/startchecking" class="active">Start Checking</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('static/img/gambarku-2.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        <h2>Start Checking</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Start Checking</li>
+        </ol>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Startchecking Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Akurasi dan Kepastian</h3>
+              <p>Ketepatan dalam mendeteksi diperlukan untuk meningkatkan produktivitas
+                dalam bekerja.</p>
+              <a href="#" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Pemantauan Real-time</h3>
+              <p>Akses data secara real-time memungkinkan pengambilan keputusan yang lebih cepat.</p>
+              <a href="#" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>Kuantitas Entitas</h3>
+              <p>Model ini dapat mendeteksi lebih dari satu orang dalam
+                kondisi tertentu. </p>
+              <a href="#" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section>
+    <!-- End Startchecking Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg" style="background-color:#ffffff">
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-tabs row  g-2 d-flex">
+          <li class="nav-item col-6">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Camera Detection</h4>
+            </a>
+          </li>
+          <li class="nav-item col-6">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Upload Image File</h4>
+            </a>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <!-- ========================= WEB CAMERA ======================== -->
+              <div class="col-md-12 mt-3 mt-lg-0 d-flex justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="card bg-light" style="width: 50%;">
+                  <h5 class="card-header">PREVIEW PENDETEKSIAN REALTIME</h5>
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <img id="video-preview" style="width: 100%" src="{{ url_for('webapp') }}" alt="Webcam Preview">
+                  </div>
+                  <div class="card-footer" style="text-align: center;">
+                    <button type="button" class="btn btn-success m-2" style="width: 20%;"
+                      onclick="startWebcam()">Start</button>
+                    <button type="button" class="btn btn-danger m-2" style="width: 20%;"
+                      onclick="stopWebcam()">Stop</button>
+                  </div>
+                  <!-- ========================= SCRIPT KAMERA ======================== -->
+                  <script>
+                    async function startWebcam() {
+                      try {
+                        const response = await fetch('/webapp/start', { method: 'POST' });
+                        const data = await response.json();
+
+                        alert(data.message);
+
+                        if (data.message === 'Webcam started successfully') {
+                          document.getElementById('video-preview').src = "{{ url_for('webapp') }}";
+                          startObjectDetection(); // Start object detection immediately
+                        }
+                      } catch (error) {
+                        console.error('Error starting webcam:', error);
+                      }
+                    }
+                    function stopWebcam() {
+                      fetch('/webapp/stop', { method: 'POST' })
+                        .then(response => response.json())
+                        .then(data => {
+                          alert(data.message);
+                          if (data.message === 'Webcam stopped successfully') {
+                            document.getElementById('video-preview').src = "";
+                          }
+                        })
+                        .catch(error => {
+                          console.error('Error stopping webcam:', error);
+                        });
+                    }
+                    function startObjectDetection() {
+                      // Fetch object detection results and update the UI
+                      fetch('/detect_palm_fruit', { method: 'POST' })
+                        .then(response => response.json())
+                        .then(data => {
+                          updateTableData(data.detectionResults);
+                          updateChart(data.detectionResults.map(result => result.count));
+                        })
+                        .catch(error => {
+                          console.error('Error fetching object detection data:', error);
+                        });
+                    }
+                  </script>
+                </div>
+              </div><!-- End tab content item -->
+            </div>
+
+            <div class="row mt-5">
+              <!-- ========================= SYLING BAGAN DATA ======================== -->
+              <div class="col-md-6 mt-3 mt-lg-0 d-flex flex-column" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="card bg-light" style="width: 100%;">
+                  <h5 class="card-header">BAGAN DATA</h5>
+                  <div class="card-body">
+                    <div id="detection-chart1" style="width: 100%;"><!-- Preview Bagan Data ada disini--></div>
+                  </div>
+                  <div class="card-footer" style="text-align: center; width:100%;"></div>
+                  <!-- ========================= SCRIPT BAGAN DATA CAMERA ======================== -->
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      // Initialize chart
+                      var counts = [0, 0]; // Initial counts
+                      var detectionChart = Plotly.newPlot('detection-chart1', [{
+                        type: 'bar',
+                        x: ['fokus', 'kantuk'],
+                        y: counts,
+                        marker: {
+                          color: ['rgb(56,118,29)', 'rgb(191,13,13)']
+                        }
+                      }], {
+                        title: 'Menghitung Hasil Deteksi Objek',
+                        yaxis: {
+                          title: 'Jumlah'
+                        }
+                      });
+                      // Update chart function
+                      function updateChart(newCounts) {
+                        counts = newCounts;
+                        Plotly.update('detection-chart1', { y: [counts] });
+                      }
+                      // Function to fetch counts from the server
+                      function fetchCounts() {
+                        fetch('/webapp/get_counts_camera')
+                          .then(response => response.json())
+                          .then(data => {
+                            updateChart(data.counts);
+                          })
+                          .catch(error => {
+                            console.error('Error fetching counts:', error);
+                          });
+                      }
+                      // Periodically fetch counts
+                      setInterval(fetchCounts, 1000); // Fetch every 1 seconds
+                    });
+                  </script>
+                </div>
+              </div><!-- End tab content item -->
+
+              <!-- ========================= TABLE DATA ======================== -->
+              <div class="col-md-6 mt-lg-0 d-flex flex-column" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="card bg-light" style="width: 100%;">
+                  <h5 class="card-header">TABLE DATA</h5>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-dark table-striped" id="tableData1">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Nama Kategori</th>
+                            <th scope="col">Jumlah</th>
+                          </tr>
+                        </thead>
+                        <tbody><!-- tabel akan tampil disini --></tbody>
+                      </table>
+                    </div>
+                    <!-- ========================= SCRIPT TABLE DATA WEB CAMERA ======================== -->
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function () {
+                        // Function to update the table with new data
+                        function updateTableData(data) {
+                          var tbody = document.getElementById('tableData1').getElementsByTagName('tbody')[0];
+                          // Clear existing rows
+                          tbody.innerHTML = '';
+                          // Iterate through the data and add rows to the table
+                          for (var i = 0; i < data.length; i++) {
+                            var row = tbody.insertRow(i);
+                            var cell1 = row.insertCell(0);
+                            var cell2 = row.insertCell(1);
+                            var cell3 = row.insertCell(2);
+
+                            cell1.innerHTML = i + 1; // No.
+                            cell2.innerHTML = data[i].className; // Nama Kelas
+                            cell3.innerHTML = data[i].count; // Jumlah
+                          }
+                        }
+                        // Function to fetch and update table data from the server
+                        function fetchTableData() {
+                          fetch('/detect_palm_fruit', { method: 'POST' })
+                            .then(response => response.json())
+                            .then(data => {
+                              updateTableData(data.detectionResults);
+                            })
+                            .catch(error => {
+                              console.error('Error fetching table data:', error);
+                            });
+                        }
+                        // Initial fetch and update of the table data
+                        fetchTableData();
+                        // Periodically fetch and update table data (adjust the interval based on your needs)
+                        setInterval(fetchTableData, 1000); // Fetch every 5 seconds, for example
+                      });
+                    </script>
+                  </div>
+                  <div class="card-footer" style="text-align: center; width:100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <!-- ========================= UPLOAD IMAGE FILE ======================== -->
+              <div class="col-md-12 mt-3 mt-lg-0 d-flex justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="card bg-light" style="width: 50%;">
+                  <h5 class="card-header">UPLOAD GAMBAR</h5>
+                  <div class="card-body">
+                    <input type="file" id="uploadInput">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <canvas style="width: 60%; margin-top: 20px; display: none;"></canvas>
+                    </div>
+                  </div>
+                  <div class="card-footer" style="text-align: center;"></div>
+                  <!-- ========================= SCRIPT UPLOAD IMAGE FILE ======================== -->
+                  <script>
+                    const input = document.getElementById("uploadInput");
+                    input.addEventListener("change", async (event) => {
+                      const file = event.target.files[0];
+                      const data = new FormData();
+                      data.append("image_file", file, "image_file");
+                      try {
+                        const response = await fetch("/detect", {
+                          method: "post",
+                          body: data
+                        });
+                        if (!response.ok) {
+                          throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        const boxes = await response.json();
+                        draw_image_and_boxes(file, boxes);
+                      }
+                      catch (error) {
+                        console.error('Error:', error);
+                      }
+                    })
+
+                    
+                    function draw_image_and_boxes(file, boxes) {
+                      const img = new Image();
+                      img.src = URL.createObjectURL(file);
+                      img.onload = () => {
+                        const canvas = document.querySelector("canvas");
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        canvas.style.display = "block"; // Menampilkan canvas
+                        const ctx = canvas.getContext("2d");
+                        ctx.drawImage(img, 0, 0);
+                        ctx.lineWidth = 10;
+                        ctx.font = "50px Arial"; // Mengatur ukuran teks
+                        ctx.textBaseline = "top";
+                    
+                        boxes.forEach(([x1, y1, x2, y2, label, prob]) => {
+                          // Tentukan warna stroke berdasarkan label kelas
+                          if (label == "fokus") {
+                            ctx.strokeStyle = "#00ff00"; // Hijau untuk fokus
+                          } else if (label == "kantuk") {
+                            ctx.strokeStyle = "#ff0000"; // Merah untuk kantuk
+                          } 
+                    
+                          ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+                          ctx.fillStyle = ctx.strokeStyle;
+                          const text = `${label} (${prob})`;
+                          const width = ctx.measureText(text).width;
+                          ctx.fillRect(x1, y1, width + 20, 50); // Latar belakang teks
+                          ctx.fillStyle = "#ffffff";
+                          ctx.fillText(text, x1, y1);
+                        });
+                      };
+                    }
+                  </script>
+                </div>
+              </div><!-- End tab content item -->
+            </div>
+            <div class="row mt-5">
+              <!-- ========================= STYLE BAGAN DATA UPLOAD ======================== -->
+              <div class="col-md-6 mt-3 mt-lg-0 d-flex flex-column" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="card bg-light" style="width: 100%;">
+                  <h5 class="card-header">BAGAN DATA</h5>
+                  <div class="card-body">
+                    <div id="detection-chart2" style="width: 600px; height: 450px;"><!-- Preview Chart Data ada disini--></div>
+                  </div>
+                  <div class="card-footer" style="text-align: center; width:100%;"></div>
+                  <!-- ========================= SCRIPT BAGAN DATA UPLOAD ======================== -->
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      // Initialize chart
+                      var counts = [0, 0]; // Initial counts
+                      var detectionChart = Plotly.newPlot('detection-chart2', [{
+                        type: 'bar',
+                        x: ['fokus', 'kantuk'],
+                        y: counts,
+                        marker: {
+                          color: ['rgb(56,118,29)', 'rgb(191,13,13)']
+                        }
+                      }], {
+                        title: 'Menghitung Jumlah Upload',
+                        yaxis: {
+                          title: 'Jumlah'
+                        }
+                      });
+                      // Update chart function
+                      function updateChart(newCounts) {
+                        counts = newCounts;
+                        Plotly.update('detection-chart2', { y: [counts] });
+                      }
+                      // Function to fetch counts from the server
+                      function fetchCounts() {
+                        fetch('/webapp/get_counts_upload')
+                          .then(response => response.json())
+                          .then(data => {
+                            updateChart(data.counts);
+                          })
+                          .catch(error => {
+                            console.error('Error fetching counts:', error);
+                          });
+                      }
+                      // Periodically fetch counts
+                      setInterval(fetchCounts, 1000); // Fetch every 1 seconds
+                    });
+                  </script>
+                </div>
+              </div><!-- End tab content item -->
+
+              <!-- ========================= TABLE DATA UPLOAD ======================== -->
+              <div class="col-md-6 mt-lg-0 d-flex flex-column" data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="card bg-light" style="width: 100%;">
+                  <h5 class="card-header">TABLE DATA</h5>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-dark table-striped" id="tableData2">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Nama Kategori</th>
+                            <th scope="col">Jumlah</th>
+                          </tr>
+                        </thead>
+                        <tbody><!-- tabel akan tampil disini --></tbody>
+                      </table>
+                    </div>
+                    <!-- ========================= SCRIPT TABLE DATA UPLOAD ======================== -->
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function () {
+                        // Function to update the table with new data
+                        function updateTableData(data) {
+                          var tbody = document.getElementById('tableData2').getElementsByTagName('tbody')[0];
+                          // Clear existing rows
+                          tbody.innerHTML = '';
+                          // Iterate through the data and add rows to the table
+                          for (var i = 0; i < data.length; i++) {
+                            var row = tbody.insertRow(i);
+                            var cell1 = row.insertCell(0);
+                            var cell2 = row.insertCell(1);
+                            var cell3 = row.insertCell(2);
+
+                            cell1.innerHTML = i + 1; // No.
+                            cell2.innerHTML = data[i].className; // Nama Kategori
+                            cell3.innerHTML = data[i].count; // Jumlah
+                          }
+                        }
+                        // Function to fetch and update table data from the server
+                        function fetchTableData() {
+                          fetch('/detect_upload', { method: 'POST' })
+                            .then(response => response.json())
+                            .then(data => {
+                              updateTableData(data.detectionResults);
+                            })
+                            .catch(error => {
+                              console.error('Error fetching table data:', error);
+                            });
+                        }
+                        // Initial fetch and update of the table data
+                        fetchTableData();
+                        // Periodically fetch and update table data (adjust the interval based on your needs)
+                        setInterval(fetchTableData, 1000); // Fetch every 5 seconds, for example
+                      });
+                    </script>
+                  </div>
+                  <div class="card-footer" style="text-align: center; width:100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>KantukScan</h3>
+              <p>
+                Surabaya 2024 <br>
+                Indonesia <br>
+                <strong> </strong> <br>
+                <strong> </strong> <br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="/" class="active">Home</a></li>
+              <li><a href="/startchecking">Start Checking</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>KantukScan</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/glightbox/js/glightbox.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

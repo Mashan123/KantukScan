@@ -1,0 +1,20 @@
+# Object Detection Course
+
+numpy==1.24.1
+cvzone==1.5.6
+ultralytics==8.0.134
+hydra-core>=1.2.0
+matplotlib==3.8.0
+opencv-python==4.8.1.78
+Pillow==9.3.2
+PyYAML==6.0.1
+requests==2.28.1
+scipy==1.11.3
+torch==2.1.0
+torchvision==0.16.0
+tqdm==4.66.1
+filterpy==1.4.5
+scikit-image==0.19.3
+lap==0.4.0
+Flask==3.0.0
+flask_wtf

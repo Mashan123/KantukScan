@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KantukScan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static', filename = '/img/turu.png')}}" rel="icon">
+  <link href="{{url_for('static', filename = '/img/turu.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static', filename = 'css/main.css')}}" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>KantukScan<span>.</span></h1>
+      </a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <!-- <li><a href="/about">About</a></li> -->
+          <li><a href="/startchecking">Start Checking</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down"><span>KantukScan</span></h2>
+            <p data-aos="fade-up">Menghadirkan Inovasi dalam Pendeteksian Kelelahan dalam Bekerja dengan menggunakan teknologi 
+              Computer Vision, yang dapat membantu pengguna tentang Keselamatan Bekerja.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="/startchecking" class="btn-get-started">Mulai Pendeteksian</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-item active" style="background-image: url(/static/img/hero-carousel/wajah-fokus-36.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/hero-carousel/wajah-fokus-36.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/hero-carousel/wajah-kantuk-1.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/hero-carousel/wajah-kantuk-24.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/hero-carousel/wajah-fokus-26.jpg)"></div>
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row position-relative">
+          <div class="col-lg-7 about-img" style="background-image: url(/static/img/hero-carousel/wajah-kantuk-24.jpg)"></div>
+          <div class="col-lg-7">
+            <h2>Pendeteksi Kantuk Berbasis Website</h2>
+            <div class="our-story">
+              <h3>Our Story</h3>
+              <p>Inspirasi pembuatan aplikasi ini berawal dari 
+                keprihatinan penulis terhadap para pekerja yang memiliki
+                mindset "WORKAHOLIC" yang cukup tinggi. Pemikiran gila kerja
+                yang sangat berlebihan hanya akan mengakibatkan kecelakaan. 
+                Disini penulis mencoba membuat sebuah aplikasi pendeteksi kantuk disertai
+                audio yang dapat memperingatkan para pekerja terutama di divisi pengendara
+                untuk tetap fokus atau beristirahat jika ada gejala mengantuk menyerang.</p>
+              <ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>KantukScan</h3>
+              <p>
+                Surabaya 2024 <br>
+                Indonesia <br>
+                <strong> </strong>  <br>
+                <strong> </strong>  <br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="/" class="active">Home</a></li>
+              <li><a href="/startchecking">Start Checking</a></li>
+            
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>KantukScan</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits"></div>
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/glightbox/js/glightbox.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+</body>
+</html>
